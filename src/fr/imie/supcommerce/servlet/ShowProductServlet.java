@@ -8,9 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import fr.imie.supcommerce.dao.ProductDao;
-import fr.imie.supcommerce.model.Product;
+import fr.imie.supcommerce.entity.Product;
 
 @SuppressWarnings("serial")
 @WebServlet(urlPatterns = "/showProduct")
@@ -21,8 +19,8 @@ public class ShowProductServlet extends HttpServlet {
 		
 		if (req.getParameter("id") != null) {
 			Long id = Long.parseLong(req.getParameter("id"));
-			Product product = ProductDao.findProduct(id);
-			req.setAttribute("product", product);
+	//		Product product = ProductDao.findProduct(id);
+	//		req.setAttribute("product", product);
 			RequestDispatcher rd = req.getRequestDispatcher("showProduct.jsp");
 			rd.forward(req, resp);
 		} else {
