@@ -1,3 +1,3 @@
 <footer>
-	<p>My super project with Kevin</p>
+	<p>A project JEE.</p>
 </footer>
