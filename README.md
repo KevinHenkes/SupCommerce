@@ -1,3 +1,0 @@
-# SupCommerce
-
-TP en JEE.

@@ -4,8 +4,6 @@
 <%@ page import="javax.servlet.http.HttpServlet"%>
 <%@ page import="javax.servlet.http.HttpServletRequest"%>
 <%@ page import="javax.servlet.http.HttpServletResponse"%>
-<%@ page import="fr.imie.supcommerce.dao.ProductDao"%>
-<%@ page import="fr.imie.supcommerce.model.Product"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
