@@ -1,0 +1,13 @@
+fr\imie\supcommerce\servlet\LoginServlet.class
+fr\imie\supcommerce\servlet\LogoutServlet.class
+fr\imie\supcommerce\servlet\RemoveProductServlet.class
+fr\imie\supcommerce\database\HibernateUtil.class
+fr\imie\supcommerce\servlet\ShowProductServlet.class
+fr\imie\supcommerce\servlet\AddCategoryServlet.class
+fr\imie\supcommerce\entity\Product.class
+fr\imie\supcommerce\servlet\AuthenticateFilter.class
+fr\imie\supcommerce\servlet\AddProductServlet.class
+fr\imie\supcommerce\database\CrudManager.class
+fr\imie\supcommerce\entity\Category.class
+fr\imie\supcommerce\servlet\InsertSomeProductServlet.class
+fr\imie\supcommerce\servlet\ListProductServlet.class

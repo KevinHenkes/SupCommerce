@@ -17,7 +17,7 @@ public class HibernateUtil {
     	initDbIfNotExist();
     	
         try {
-            return Persistence.createEntityManagerFactory("PokerUnit");
+            return Persistence.createEntityManagerFactory("SupCommerceUnit");
         }
         catch (Throwable ex) {
             System.err.println("Initial EntityManagerFactory creation failed." + ex);
@@ -30,7 +30,7 @@ public class HibernateUtil {
     }
     
     private static void initDbIfNotExist() {
-		final String JDBC_DRIVER = "com.mysql.jdbc";
+		final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
 		final String DB_URL = "jdbc:mysql://localhost/";
 
 		// Database credentials

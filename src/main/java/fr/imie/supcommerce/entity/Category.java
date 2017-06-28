@@ -1,5 +1,6 @@
 package fr.imie.supcommerce.entity;
-import java.util.Collection;
+import java.io.Serializable;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -10,33 +11,30 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="category")
-public class Category {
+@Table(name="Category")
+public class Category implements Serializable {	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -2555051498674874014L;
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	private Long id;
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long categoryId;
+	
 	private String name;
 	
-	@OneToMany(mappedBy="category", fetch=FetchType.EAGER)
-	private Collection<Product> products;
-
+	@OneToMany(fetch=FetchType.EAGER, mappedBy="category")
+	private List<Product> products;
+	
 	public Category() {
-		super();
+		
 	}
 
-	public Category(Long id, String name) {
-		this.id = id;
+	public Category(String name) {
 		this.name = name;
 	}
-
-	public Long getId() {
-		return id;
-	}
 	
-	public void setId(Long id) {
-		this.id = id;
-	}
 	
 	public String getName() {
 		return name;
@@ -44,6 +42,24 @@ public class Category {
 	
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	
+	public List<Product> getProducts() {
+		return products;
+	}
+
+	public void setProducts(List<Product> products) {
+		this.products = products;
+	}
+	
+	
+	public Long getCategoryId() {
+		return categoryId;
+	}
+
+	public void setCategoryId(Long categoryId) {
+		this.categoryId = categoryId;
 	}
 	
 	

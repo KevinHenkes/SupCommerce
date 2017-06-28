@@ -68,7 +68,7 @@ public class AddProductServlet extends HttpServlet {
     		}
 
             resp.getWriter().println("Product added");
-			resp.sendRedirect(req.getContextPath()+"/showProduct?id="+product.getId());
+			//resp.sendRedirect(req.getContextPath()+"/showProduct?id="+product.getId());
         }
 	}
 
